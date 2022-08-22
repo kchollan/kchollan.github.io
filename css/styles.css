@@ -1,0 +1,131 @@
+
+  body {
+    background-color: #FBF1DA;
+    color: #251605;
+  }
+
+  h1 {
+    font-family: 'IM Fell Great Primer', serif;
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-family: 'IM Fell Great Primer', serif;
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-family: 'IM Fell Great Primer', serif;
+    font-size: 2rem;
+  }
+
+  h4 {
+    font-family: 'IM Fell Great Primer', serif;
+    font-size: 1.5rem;
+  }
+
+  p1 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.5rem;
+  }
+
+  /* Navbar */
+  .navbar {
+    background-color: #FBF1DA;
+    text-decoration-color: #985534 !important;
+    font-family: 'Libre Baskerville', serif;
+  }
+
+  a.navbar-brand, a.nav-link {
+    color: #251605;
+  }
+
+  .btn-primary {
+    background-color: #EC8D5B !important;
+    border-color: #EC8D5B !important;
+    color:#FBF1DA;
+  }
+
+  .btn-primary:focus {
+    background-color: #251605 !important;
+    border-color: #251605 !important;
+  }
+
+  /* Title */
+  #title {
+    margin: auto;
+    background-color: #9CAFB7;
+    width: auto;
+    border-bottom: 15%;
+    font-family: 'IM Fell Great Primer', serif;
+   }
+
+   .row {
+     margin-bottom: 3%;
+   }
+   .col-8 {
+     overflow: auto;
+   }
+
+   .col-8 h1 {
+     text-align: center;
+     margin-bottom: 3%;
+   }
+
+   .col-8 h2 {
+     margin-bottom: 3%;
+     text-align: center;
+   }
+
+   /* About */
+   #about {
+     margin: auto;
+     background-color: #EC8D5B;
+     width: auto;
+     border-bottom: 15%;
+   }
+
+   #about-text{
+     margin-top: 3%;
+   }
+
+   .btn-lg {
+     color: #EC8D5B;
+     background-color: #251605 !important;
+     border-color: #251605!important;
+     font-family: 'IM Fell Great Primer', serif;
+   }
+
+   /* Projects */
+
+   #projects {
+     margin: auto;
+     width: auto;
+     border-bottom: 15%;
+   }
+
+   #project-1.container-lg{
+     background-color: #9CAFB7;
+     padding: 3px;
+   }
+
+   .sixth-market-img {
+     width: 90%;
+     height: 90%;
+   }
+
+   .pref-socmed-img {
+    width: 90%;
+    height: 90%;
+   }
+
+   #change-carousel {
+     text-align: center;
+     transition: 1.5s;
+   }
+
+   #contact {
+     background-color: #9CAFB7;
+     text-align: center;
+     margin-top: ;
+   }
