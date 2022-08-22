@@ -96,6 +96,11 @@
      font-family: 'IM Fell Great Primer', serif;
    }
 
+   .btn-lg:focus {
+     background-color: #9CAFB7 !important;
+     border-color: #9CAFB7!important;
+   }
+
    /* Projects */
 
    #projects {
@@ -128,4 +133,15 @@
      background-color: #9CAFB7;
      text-align: center;
      margin-top: ;
+   }
+
+   .btn-email, .btn-handshake, .btn-linkedin {
+     background-color: #251605 !important;
+     border-color: #251605 !important;
+     color: #9CAFB7;
+   }
+
+   .btn-email:focus, .btn-handshake:focus, .btn-linkedin:focus {
+     background-color: #EC8D5B !important;
+     border-color: #EC8D5B !important;
    }
