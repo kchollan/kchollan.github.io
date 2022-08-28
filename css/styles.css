@@ -6,58 +6,82 @@
 
   h1 {
     font-family: 'IM Fell Great Primer', serif;
-    font-size: 5rem;
+    font-size: 5.5vw;
   }
 
   h2 {
     font-family: 'IM Fell Great Primer', serif;
-    font-size: 3rem;
+    font-size: 4vw;
   }
 
   h3 {
     font-family: 'IM Fell Great Primer', serif;
-    font-size: 2rem;
+    font-size: 3vw;
   }
 
   h4 {
     font-family: 'IM Fell Great Primer', serif;
-    font-size: 1.5rem;
+    font-size: 2vw;
   }
 
   p1 {
     font-family: 'Libre Baskerville', serif;
-    font-size: 1.5rem;
+    font-size: 2vw;
   }
 
   /* Navbar */
   .navbar {
     background-color: #FBF1DA;
-    text-decoration-color: #985534 !important;
+    color: #251605;
+    font-size: 2vw;
+  }
+  @media (min-width: 768px) {
+    .navbar {
+      padding-left:  24px;
+      padding-right: 24px;
+    }
+  }
+
+  .navbar-brand {
+    font-family: 'IM Fell Great Primer', serif;
+  }
+
+  .nav-link {
+    margin-top: .25rem;
+    font-family: 'Libre Baskerville', serif;
+  }
+  .dropdown-menu {
+    background-color: #FBF1DA;
     font-family: 'Libre Baskerville', serif;
   }
 
-  a.navbar-brand, a.nav-link {
-    color: #251605;
+  .dropdown-item:active, .dropdown-item:focus, .dropdown-item:hover {
+    background-color: #FBF1DA;
+    color: #EC8D5B;
+  }
+  #navbar .btn-lg{
+    color: #EC8D5B;
+    border-color: #EC8D5B;
+    font-family: 'IM Fell Great Primer', serif;
+    margin-left: 1vw;
+    font-size: 2vw;
   }
 
-  .btn-primary {
+  #navbar .btn-lg:focus, #navbar .btn-lg:focus, #navbar .btn-lg:hover {
+    color: #FFFFFF;
     background-color: #EC8D5B !important;
-    border-color: #EC8D5B !important;
-    color:#FBF1DA;
+    border-color: #EC8D5B!important;
+    box-shadow: #EC8D5B!important;
+    -webkit-box-shadow: none !important;
   }
-
-  .btn-primary:focus {
-    background-color: #251605 !important;
-    border-color: #251605 !important;
-  }
-
   /* Title */
-  #title {
+  #title .container-md{
     margin: auto;
     background-color: #9CAFB7;
     width: auto;
     border-bottom: 15%;
     font-family: 'IM Fell Great Primer', serif;
+    text-align: center;
    }
 
    .row {
@@ -73,33 +97,34 @@
    }
 
    .col-8 h2 {
+     margin-top: 5%;
      margin-bottom: 3%;
      text-align: center;
    }
 
    /* About */
-   #about {
+   .container-md.about{
      margin: auto;
      background-color: #EC8D5B;
      width: auto;
      border-bottom: 15%;
-   }
+    }
 
-   #about-text{
-     margin-top: 3%;
-   }
+    #about .btn-lg{
+      color: #251605;
+      border-color: #251605;
+      font-family: 'IM Fell Great Primer', serif;
+      font-size: 3vw;
+      margin: 15%;
+    }
 
-   .btn-lg {
-     color: #EC8D5B;
-     background-color: #251605 !important;
-     border-color: #251605!important;
-     font-family: 'IM Fell Great Primer', serif;
-   }
-
-   .btn-lg:focus {
-     background-color: #9CAFB7 !important;
-     border-color: #9CAFB7!important;
-   }
+    #about .btn-lg:focus, #about .btn-lg:focus, #about .btn-lg:hover {
+      color: #FFFFFF;
+      background-color: #9CAFB7 !important;
+      border-color: #9CAFB7!important;
+      box-shadow: #9CAFB7!important;
+      -webkit-box-shadow: none !important;
+    }
 
    /* Projects */
 
@@ -114,34 +139,38 @@
      padding: 3px;
    }
 
-   .sixth-market-img {
-     width: 90%;
-     height: 90%;
+   .responsive {
+     width: 100%;
+     height: auto;
    }
 
-   .pref-socmed-img {
-    width: 90%;
-    height: 90%;
-   }
 
    #change-carousel {
      text-align: center;
      transition: 1.5s;
    }
 
-   #contact {
+   #contact .container-md{
+     margin: auto;
      background-color: #9CAFB7;
+     width: auto;
+     border-bottom: 15%;
+     font-family: 'IM Fell Great Primer', serif;
      text-align: center;
-     margin-top: ;
-   }
+    }
 
-   .btn-email, .btn-handshake, .btn-linkedin {
-     background-color: #251605 !important;
-     border-color: #251605 !important;
-     color: #9CAFB7;
-   }
+    #contact .btn-lg{
+      color: #251605;
+      border-color: #251605;
+      font-family: 'IM Fell Great Primer', serif;
+      font-size: 3vw;
+      margin: 15%;
+    }
 
-   .btn-email:focus, .btn-handshake:focus, .btn-linkedin:focus {
-     background-color: #EC8D5B !important;
-     border-color: #EC8D5B !important;
-   }
+    #contact .btn-lg:focus, #contact .btn-lg:focus, #contact .btn-lg:hover {
+      color: #FFFFFF;
+      background-color: #EC8D5B !important;
+      border-color: #EC8D5B!important;
+      box-shadow: #EC8D5B!important;
+      -webkit-box-shadow: none !important;
+    }

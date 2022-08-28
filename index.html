@@ -16,61 +16,66 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar sticky-top navbar-expand-lg">
-      <a class="navbar-brand" href="#">K C Holland</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Projects
-          </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Sixth Market</a>
-              <a class="dropdown-item" href="#">Social Media v. Wellness</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">More</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <button type="button" class="btn btn-primary">Contact</button>
-          </li>
-        </ul>
+    <section id="navbar">
+      <nav class="navbar navbar-expand-md navbar-light">
+        <a class="navbar-brand" href="https://kchollan.github.io/"><h2>KC Holland</h2></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#title">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#Projects" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Projects
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#design">Design</a>
+                <a class="dropdown-item" href="#data-analysis">Data Analysis</a>
+                <a class="dropdown-item" href="#more-projects">More Projects</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-lg btn-outline" type="button">Résumé</button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+    <!-- Title -->
+    <section id="title">
+      <div class="container-md title">
+        <div class="row">
+          <div class="col-2">
+          </div>
+          <div class="col-8">
+            <h2>Undergraduate student at UC San Diego</h2>
+            <h3>Studying Cognitive Science with a Specialization in Design and
+              Interaction</h3>
+          </div>
+          <div class="col-2">
+          </div>
+        </div>
       </div>
-    </nav>
-      <div class="container-fluid">
-        <!-- Title -->
-        <div class="container-fluid" id="title">
+    </section>
+
+
+    <!-- About -->
+    <section id="about">
+      <div class="container-md about">
+        <div class="container-fluid">
           <div class="row">
             <div class="col-2">
             </div>
             <div class="col-8">
-              <h1>Undergraduate student at UC San Diego</h1>
-              <h2>Studying Cognitive Science with a Specialization in Design and
-                Interaction</h2>
-            </div>
-            <div class="col-2">
-            </div>
-          </div>
-        </div>
-      </div>
-
-    <!-- About -->
-      <div class="container-fluid">
-        <div class="container-fluid" id=about>
-          <div class="row">
-            <div class="col-2">
-            </div>
-            <div class="col-8" id=about-text>
               <h2>About</h2>
             </div>
             <div class="col-2">
@@ -78,7 +83,6 @@
           </div>
           <div class="row">
             <div class="col-4">
-              <!-- Make this a spinning thing if you can! If not, then delete. -->
               <h1>Hi! I'm Kimberly, and I am a</h1>
               <div id="about-carousel" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
@@ -93,6 +97,9 @@
                   </div>
                 </div>
               </div>
+              <div class="col text-center">
+                <a href="images/Resume.pdf" class="btn btn-lg btn-outline" button type="button">Résumé</a>
+              </div>
             </div>
             <div class="col-8">
               <p1>I am interested in UX design, and seek to enter the industry once
@@ -101,91 +108,107 @@
             </div>
           </div>
           <div class="row">
-            <a href="images/Resume.pdf" class="btn btn-lg btn-primary" button type="button">Résumé</a>
+            <div class="col-1">
+            </div>
+
+            <div class="col-1">
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
     <!-- Projects -->
-      <div class="container-fluid">
-        <div class = "container-fluid" id="projects">
+      <section id="projects">
+        <div class="container-md">
+          <div class = "container-fluid">
+            <div class="row">
+              <div class="col-2">
+              </div>
+              <div class="col-8">
+                <h2>Projects</h2>
+            </div>
+            <div class="col-2">
+            </div>
+          </div>
+          <section id="design">
+            <div class="row">
+              <div class="col-5">
+                <img src="images/6th-market.jpg" alt="Sixth Market Redesign" class="responsive">
+              </div>
+              <div class="col-7">
+                <h4><b>Design</b></h4>
+                <h2>Redesigning Sixth Market</h2>
+                <p1>Engaged in the user-centered design process including user research, personas, storyboards, and iterative prototyping to redesign the layout of UCSD's Sixth Market to accomodate students' needs.</p1>
+                <!-- This will be a button in the shape of an arrow that will lead them to a separate page that talks about the project. -->
+                <h3> Read More (Coming Soon!)-> </h3>
+              </div>
+            </div>
+          </section>
+          <section id="data-analysis">
+            <div class="row">
+              <div class="col-7">
+                <h4><b>Data Analysis</b></h4>
+                <h2>Social Media’s Correlation With Personal Wellbeing and Education during COVID-19 Lockdown</h2>
+                <p1>Conducted data analysis using Python to discover the correlation between students' preferred social media sites and wellbeing for students within and outside the Delhi National Capital Region in India during the COVID-19 lockdown.</p1>
+                <h3> Read More (Coming Soon!)-> </h3>
+              </div>
+              <div class="col-5">
+                <img src="images/socmed-wellness.png" alt="Preferred Social Media vs. Wellbeing" class="responsive"  >
+              </div>
+            </div>
+          </section>
+          <section id="more-projects">
+            <div class="row">
+              <div class="col-2">
+              </div>
+              <div class="col-8" id="carousel-row">
+                <h2> If I could change the world...</h2>
+                <div id="change-carousel" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <p1><b>Spirit Mark Design Opportunity: Reimagining UCSD Club Sports' Logo Redesign. 30+ SPORTS CLUBS, ONE TEAM. Coming Soon!</b><p1>
+                    </div>
+                    <div class="carousel-item">
+                      <p1><b>Case Study: Fusion - Rec Management Software. How to make a program more user friendly. Coming soon!</b><p1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-2">
+              </div>
+            </div>
+          </section>
+      </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container-md">
+        <div class="container-fluid">
           <div class="row">
             <div class="col-2">
             </div>
             <div class="col-8">
-              <h2>Projects</h2>
+              <h2>Contact</h2>
+              <p1>Let's get in touch!</p1>
+            </div>
+            <div class="col-2">
+            </div>
           </div>
-          <div class="col-2">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-5">
-            <img class="sixth-market-img" src="images/6th-market.jpg" alt="Sixth Market Redesign">
-        </div>
-          <div class="col-7">
-            <h4><b>Design</b></h4>
-            <h2>Redesigning Sixth Market</h2>
-            <p1>Engaged in the user-centered design process including user research, personas, storyboards, and iterative prototyping to redesign the layout of UCSD's Sixth Market to accomodate students' needs.</p1>
-            <!-- This will be a button in the shape of an arrow that will lead them to a separate page that talks about the project. -->
-            <h3> Read More (Coming Soon!)-> </h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-7">
-            <h4><b>Data Analysis</b></h4>
-            <h2>Social Media’s Correlation With Personal Wellbeing and Education during COVID-19 Lockdown</h2>
-            <p1>Conducted data analysis using Python to discover the correlation between students' preferred social media sites and wellbeing for students within and outside the Delhi National Capital Region in India during the COVID-19 lockdown.</p1>
-            <h3> Read More (Coming Soon!)-> </h3>
-          </div>
-          <div class="col-5">
-            <img class="pref-socmed-img" src="images/socmed-wellness.png" alt="Preferred Social Media vs. Wellbeing">
-          </div>
-      </div>
-      <div class="row">
-        <div class="col-2">
-        </div>
-        <div class="col-8" id="carousel-row">
-          <h2> If I could change the world...</h2>
-          <div id="change-carousel" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <p1><b>Spirit Mark Design Opportunity: Reimagining UCSD Club Sports' Logo Redesign. 30+ SPORTS CLUBS, ONE TEAM. Coming Soon!</b><p1>
-              </div>
-              <div class="carousel-item">
-                <p1><b>Case Study: Fusion - Rec Management Software. How to make a program more user friendly. Coming soon!</b><p1>
-              </div>
+          <div class="row">
+            <div class="col-4">
+              <a href="mailto:kchollan@ucsd.edu" class="btn btn-lg btn-outline" button type="button">Email</a>
+            </div>
+            <div class="col-4">
+              <a href="https://app.joinhandshake.com/stu/users/18071371" class="btn btn-lg btn-outline" button type="button">Handshake</a>
+            </div>
+            <div class="col-4">
+              <a href="https://www.linkedin.com/in/kimberly-holland-6b1aba244/" class="btn btn-lg btn-outline" button type="button">LinkedIn</a>
             </div>
           </div>
         </div>
-        <div class="col-2">
-        </div>
       </div>
-    <!-- Contact -->
-    <div class="container-fluid">
-      <div class="container-fluid" id="contact">
-        <div class="row">
-          <div class="col-2">
-          </div>
-          <div class="col-8">
-            <h1>Contact</h1>
-            <p1>Let's get in touch!</p1>
-          </div>
-          <div class="col-2">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-4">
-            <a href="mailto:kchollan@ucsd.edu" class="btn btn-lg btn-email" button type="button">Email</a>
-          </div>
-          <div class="col-4">
-            <a href="https://app.joinhandshake.com/stu/users/18071371" class="btn btn-lg btn-handshake" button type="button">Handshake</a>
-          </div>
-          <div class="col-4">
-            <a href="https://www.linkedin.com/in/kimberly-holland-6b1aba244/" class="btn btn-lg btn-linkedin" button type="button">LinkedIn</a>
-          </div>
-        </div>
-      </div>
-    </div>
+    </section>
     <!-- JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
